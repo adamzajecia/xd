@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tytuł strony</title>
+</head>
+<body background="buzka.png">
+
+    <input type="number" id="row" value="5">
+    <input type="number" id="column" value="6">
+    <button onclick= "generuj()">Generuj</button>
+
+
+
+    <script>
+
+        function generuj(){
+            var row = document.getElementById('row').value;
+            var column = document.getElementById('column').value;
+
+            var i = 0;
+            var a = 0;
+            console.log(row,column)
+            while(a < row){
+                while(i < column){
+                    document.write("XD")
+                    i++;
+                }
+                i = 0;
+                document.write("<br>")
+                a++;
+            }
+
+        }
+
+    </script>
+</body>
+</html>
